@@ -4,7 +4,7 @@
 * Дата: 06.10.2023                *
 * Название: Циклы с ветвлением    *
 * Вариант: 7                      *
-* https://onlinegdb.com/HxF5gjBM_ *
+* https://onlinegdb.com/GnOPwJEMs *
 **********************************/
 
 #include <iostream>
@@ -27,16 +27,16 @@ int main() {
   
   int *speed = new int [counter]; //A dynamic array has been created. It will be deleted!
   
-  for (int i = 0; i < counter; ++i) {
-    cout << "Number of iteration: " << i+1 << " Write speed: ";
-    cin >> speed[i];
+  for (int index = 0; index < counter; ++index) {
+    cout << "Number of iteration: " << index +1 << " Write speed: ";
+    cin >> speed[index];
   }
   
   cout << " " << '\n';
   
-  for (int i = 0; i < counter; ++i) {
+  for (int index = 0; index < counter; ++index) {
     
-    numberFroude = pow((speed[i]), 2) / (gravity * diameter);
+    numberFroude = pow((speed[index]), 2) / (gravity * diameter);
     
     if (numberFroude < 50) {
       gasSaturationCoefficient = 0.05 * pow(numberFroude, 0.2); 
